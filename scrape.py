@@ -12,12 +12,14 @@ import os
 
 credentials = list(pd.read_csv(os.getcwd()+'\\credentials.csv').columns)
 
-
+#Authorizes the script based on credentials in the credentials file
 auth = tweepy.OAuthHandler(credentials[0],credentials[1])
 auth.set_access_token(credentials[2],credentials[3])
-
+#Creates the api object
 api = tweepy.API(auth)
 
-public_tweets = api.home_timeline()
-#for tweet in public_tweets:
-#    print(tweet.text)
+topic = "shoes"
+
+#Collects the twelve most popular tweets pertaining to the topic above
+#and prints them
+popular_tweets = api.search(q=topic, result_type='popular')
