@@ -1,2 +1,4 @@
 #Ignore credentials file
 credentials.csv
+#Ignore the word cloud image
+cloud.png
