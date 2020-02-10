@@ -32,7 +32,7 @@ def make_cloud(string):
 
 
 
-topic = "bernie"
+topic = "shoe"
 
 #Collects the twelve most popular tweets pertaining to the topic above
 #and prints them
