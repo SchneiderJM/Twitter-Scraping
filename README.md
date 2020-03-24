@@ -1,3 +1,3 @@
 # Twitter-Scraping
-This project is just a test to learn Tweepy which will then be implemented onto the website project.
-It will gather some tweets and show some analytics or draw a word cloud.
+This project is just a test to learn how to access the Twitter API via tweepy.
+It gathers some tweets and draws a word cloud.
